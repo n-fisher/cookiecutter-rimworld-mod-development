@@ -58,7 +58,7 @@ This cookiecutter setup takes full advantage of VS debug/release versions
 - Debug mode
   - About-Debug.xml contains instructions on editing About-Release.xml and has a separate title for easy recognition from the Release version 
   - Building creates an About.xml from About-Debug.xml with a "- Dev Build" tag to be easily distinguishable in the mod list
-  - The resulting .dll is placed in "{{cookiecutter.mod_name}}/
+  - The resulting .dll is placed in "{{cookiecutter.mod_name}}/"
 - Release mode
   - About-Release.xml is copied to "{{cookiecutter.mod_name}} - Release/About/About.xml" and does not include the "- Dev Mode" tag in its title
   - Building utilizes scripts to create or update the Release version of the mod. Solely the essential files are copied into a separate Release mod folder for a storage-optimized version of the mod
