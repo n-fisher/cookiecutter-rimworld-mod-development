@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>{{cookiecutter.mod_name}}</name>
+	<author>{{cookiecutter.author}}</author>
+	<targetVersion>{{cookiecutter.target_version}}</targetVersion>
+	<description>{{cookiecutter.in_game_description}}</description>
+	<url>{{cookiecutter.url}}</url>
+</ModMetaData>

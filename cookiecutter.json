@@ -1,0 +1,8 @@
+{
+    "mod_name": "Example Mod",
+    "namespace_name": "{{cookiecutter.mod_name.replace(' ', '_')}}",
+    "author": "My Steam Username",
+    "target_version": "0.18.0",
+    "in_game_description": "A short mod description.",
+	"url": "https://steamcommunity.com/id/{{cookiecutter.author}}/myworkshopfiles/?appid=294100"
+}
