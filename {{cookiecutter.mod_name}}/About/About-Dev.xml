@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>{{cookiecutter.mod_name}} - Dev Build</name>
+	<author>{{cookiecutter.author}}</author>
+	<targetVersion>{{cookiecutter.target_version}}</targetVersion>
+	<description>{{cookiecutter.in_game_description}} 
+(This is the dev version of {{cookiecutter.mod_name}}. The release version of About.xml is available for editing at About/About.xml. Edits made on this file won't show up on the release version. Use VisualStudio to build a "Release" version of this mod when ready to upload your mod!)</description>
+	<url>{{cookiecutter.url}}</url>
+</ModMetaData>
