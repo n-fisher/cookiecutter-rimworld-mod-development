@@ -4,5 +4,6 @@
     "in_game_description": "A short mod description.",
     "skippable_debugsavedatafolder": "Path for savedatafolder. Leave blank for default folder.",
     "skippable_namespace_name": ["{{cookiecutter.mod_name.replace(' ', '_')}}",
-					   "{{cookiecutter.mod_name.replace(' ', '-')}}"]
+					   "{{cookiecutter.mod_name.replace(' ', '-')}}"],
+    "skippable_targetversion": "0.18.0"
 }
