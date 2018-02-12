@@ -32,12 +32,13 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
 
 - [Visual Studio Community 2017](https://www.visualstudio.com/downloads/)
 #### Usage
+(Due to a bug in VS, you'll have to make the specific mod's folder in ../Rimworld/Mods/Foldername beforehand)
 1. Open Visual Studio
 2. `File -> New -> From Cookiecutter...`
 3. Search for `rimworld`
 4. Double-click `n-fisher/cookiecutter-rimworld-mod-development`
 5. Change the Template Options:
-   - `Create To` => `Your/Rimworld/Mod/Directory`
+   - `Create To` => `../Rimworld/Mods/mod_name`
    - `mod_name`
    - `skippable_namespace_name` (don't change if unsure)
    - `author` => `your steam username`
