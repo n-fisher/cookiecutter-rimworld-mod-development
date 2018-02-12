@@ -2,15 +2,19 @@
 A cookiecutter project that builds the basic Rimworld mod development file structure and sets up a sane build environment.
 
 ## Install/Setup
-### Windows Shell
+### (Option 1) Windows Command Prompt
+##### Required Programs
 - [git](https://git-scm.com/downloads)
 - [python](https://www.python.org/downloads/)
 - [cookiecutter](https://github.com/audreyr/cookiecutter) (or `pip install cookiecutter`)
-#### Usage (inside Rimworld/Mods folder)
+##### Usage (inside Rimworld/Mods folder)
     $ cookiecutter gh:n-fisher/cookiecutter-rimworld-mod-development
     
-### Microsoft Visual Studio
+### (Option 2) Microsoft Visual Studio Integration
+##### Required Programs
 
+- [Visual Studio Community 2017](https://www.visualstudio.com/downloads/)
+##### Usage
 1. `File -> New -> From Cookiecutter...`
 2. Search for `rimworld`
 3. Double-click `n-fisher/cookiecutter-rimworld-mod-development`
