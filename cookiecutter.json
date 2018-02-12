@@ -1,7 +1,8 @@
 {
     "mod_name": "Example Mod",
-    "namespace_name": ["{{cookiecutter.mod_name.replace(' ', '_')}}",
-					   "{{cookiecutter.mod_name.replace(' ', '-')}}"],
     "author": "MySteamUsername",
-    "in_game_description": "A short mod description."
+    "in_game_description": "A short mod description.",
+    "skippable_debugsavedatafolder": "Path for savedatafolder. Leave blank for default folder.",
+    "skippable_namespace_name": ["{{cookiecutter.mod_name.replace(' ', '_')}}",
+					   "{{cookiecutter.mod_name.replace(' ', '-')}}"]
 }

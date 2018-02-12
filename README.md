@@ -39,7 +39,7 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
 5. Change the Template Options:
    - `Create To` => `Your/Rimworld/Mod/Directory`
    - `mod_name`
-   - `namespace_name` (don't change if unsure)
+   - `skippable_namespace_name` (don't change if unsure)
    - `author` => `your steam username`
    - `target_version` => `current RW version` (can leave blank for most up-to-date)
    - `in_game_description` (not required, can change later in About-Release.xml)
@@ -62,11 +62,11 @@ This cookiecutter builds the entire standard mod folder structure, with empty fo
   - Source
     - Properties
       - AssemblyInfo.cs
-    - {{cookiecutter.namespace_name}}.cs
-    - {{cookiecutter.namespace_name}}.csproj
-    - {{cookiecutter.namespace_name}}.csproj.user
+    - {{cookiecutter.skippable_namespace_name}}.cs
+    - {{cookiecutter.skippable_namespace_name}}.csproj
+    - {{cookiecutter.skippable_namespace_name}}.csproj.user
   - Textures
-  - {{cookiecutter.namespace_name}}.sln
+  - {{cookiecutter.skippable_namespace_name}}.sln
 
 ## VS Setup Automation
 - Links Rimworld and UnityEngine .dlls for importing in code
