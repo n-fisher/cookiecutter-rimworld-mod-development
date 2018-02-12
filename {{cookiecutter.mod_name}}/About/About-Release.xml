@@ -4,5 +4,5 @@
 	<author>{{cookiecutter.author}}</author>
 	<targetVersion>{{cookiecutter.target_version}}</targetVersion>
 	<description>{{cookiecutter.in_game_description}}</description>
-	<url>{{cookiecutter.url}}</url>
+	<url>https://steamcommunity.com/id/{{cookiecutter.author}}/myworkshopfiles/?appid=294100</url>
 </ModMetaData>
