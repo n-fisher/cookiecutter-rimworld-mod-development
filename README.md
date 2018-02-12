@@ -14,24 +14,25 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
   - [VS Setup Automation](#vs-setup-automation)  
 - [Advanced Features](#advanced-features) 
   - [Debug/Release Versioning](#debugrelease-versioning)  
+  - [Optional Debug Save Profile](#optional-debug-save-profile)  
   - [Accident Forgiveness :tm:](#accident-forgiveness)  
 
 
 # Install/Setup
-## Windows Command Prompt
-#### Required Programs
+### Windows Command Prompt
+##### Required Programs
 - [git](https://git-scm.com/downloads)
 - [python](https://www.python.org/downloads/)
 - [cookiecutter](https://github.com/audreyr/cookiecutter) (or `pip install cookiecutter`)
 
-#### Usage (inside Rimworld/Mods folder)
+##### Usage (inside Rimworld/Mods folder)
     $ cookiecutter gh:n-fisher/cookiecutter-rimworld-mod-development
     
-## Microsoft Visual Studio Integration
-#### Required Programs
+### Microsoft Visual Studio Integration
+##### Required Programs
 
 - [Visual Studio Community 2017](https://www.visualstudio.com/downloads/)
-#### Usage
+##### Usage
 (Due to a bug in VS, you'll have to make the specific mod's folder in `[...]/Rimworld/Mods/ModName` beforehand)
 1. Open Visual Studio
 2. `File -> New -> From Cookiecutter...`
@@ -49,7 +50,7 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
 
 
 # Basic Features
-## Folder Structure
+### Folder Structure
 This cookiecutter builds the entire standard mod folder structure, with empty folders as the default.
 - {{cookiecutter.mod_name}}
   - About
@@ -70,7 +71,7 @@ This cookiecutter builds the entire standard mod folder structure, with empty fo
   - Textures
   - {{cookiecutter.skippable_namespace_name}}.sln
 
-## VS Setup Automation
+### VS Setup Automation
 - Links Rimworld and UnityEngine .dlls for importing in code
 - Sets build events to automate file management of About-$Version.xml for tagging development versions.
 - Clears the default set debugging and trace constants
@@ -78,7 +79,7 @@ This cookiecutter builds the entire standard mod folder structure, with empty fo
 - Clicking `Start ▶️` will preform the designated build sequence and start Rimworld.exe tied to a Visual Studio resource monitor.
 
 # Advanced Features
-## Debug/Release Versioning
+### Debug/Release Versioning
 This cookiecutter setup takes full advantage of VS debug/release versions
 - Debug mode
   - About-Debug.xml contains instructions on editing About-Release.xml and has a separate title for easy recognition from the Release version 
@@ -88,9 +89,9 @@ This cookiecutter setup takes full advantage of VS debug/release versions
   - About-Release.xml is copied to "{{cookiecutter.mod_name}} - Release/About/About.xml" and does not include the "- Dev Mode" tag in its title
   - Building utilizes scripts to create or update the Release version of the mod. Solely the essential files are copied into a separate Release mod folder for a storage-optimized version of the mod
   
-## Optional Debug Save Profile
+### Optional Debug Save Profile
 Feeding a filepath (either absolute "C:\" or relative to the root game folder) to `skippable_debugsavedatafolder` will create a new/load an existing Rimworld save data folder, including having different world saves, mod lists, and settings profiles, specifically when ran in debug mode. Perfect for maintaining a debug mod test/development environment and then testing the release version on mature saves with other mods!
   
-## Accident Forgiveness
+### Accident Forgiveness
 - Edits in either generated temporary About.xml file (release or debug) won't get overwritten as long as the About-$Version.xml file it was copied from is not updated
 - Items edited in the Release directory will not be overwritten with older data from the Debug/Dev directory
