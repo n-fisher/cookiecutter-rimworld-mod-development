@@ -40,11 +40,11 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
 5. Change the Template Options:
    - `Create To` => `[...]/Rimworld/Mods/ModName`
    - `mod_name`
-   - `skippable_namespace_name` (don't change if unsure)
    - `author` => `your steam username`
-   - `target_version` => `current RW version` (can leave blank for most up-to-date)
    - `in_game_description` (not required, can change later in About-Release.xml)
-   - `url` (can leave blank for link to your Steam Workshop profile)
+   - `skippable_debugsavedatafolder` (don't change if unsure)
+   - `skippable_namespace_name` (don't change if unsure)
+   - `skippable_targetversion` => `current RW version` (can leave blank for most up-to-date)
 6. `Create and Open Folder`
 
 
@@ -59,6 +59,7 @@ This cookiecutter builds the entire standard mod folder structure, with empty fo
   - Assemblies
   - Defs
   - Languages
+  - Patches
   - Sounds
   - Source
     - Properties
@@ -86,6 +87,9 @@ This cookiecutter setup takes full advantage of VS debug/release versions
 - Release mode
   - About-Release.xml is copied to "{{cookiecutter.mod_name}} - Release/About/About.xml" and does not include the "- Dev Mode" tag in its title
   - Building utilizes scripts to create or update the Release version of the mod. Solely the essential files are copied into a separate Release mod folder for a storage-optimized version of the mod
+  
+## Optional Debug Save Profile
+Feeding a filepath (either absolute "C:\" or relative to the root game folder) to `skippable_debugsavedatafolder` will create a new/load an existing Rimworld save data folder, including having different world saves, mod lists, and settings profiles, specifically when ran in debug mode. Perfect for maintaining a debug mod test/development environment and then testing the release version on mature saves with other mods!
   
 ## Accident Forgiveness
 - Edits in either generated temporary About.xml file (release or debug) won't get overwritten as long as the About-$Version.xml file it was copied from is not updated
