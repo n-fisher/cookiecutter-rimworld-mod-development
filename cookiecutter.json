@@ -3,12 +3,12 @@
     "author": "MySteamUsername",
     "in_game_description": "A short mod description.",
     "debug_savedata_folder": "Path for savedatafolder. Leave blank for default folder.",
-	"create_empty_definitions": "yes",
+	"create_empty_definitions": "n",
 	
 	"_visual_studio": {
         "mod_name": {
             "label": "Mod name (see tooltip)",
-            "description": "The name of your mod (cannot easily change later) (must Create To folder of same name in \\Rimworld\\Mods)",
+            "description": "The name of your mod (cannot easily change later) (must Create To folder of same name in \\Rimworld\\Mods\\)",
 			"selector": "string",
 			"url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
         },
@@ -27,7 +27,14 @@
         "debug_savedata_folder" : {
             "label": "Debug Savedata Folder",
             "description": "Path to the folder to use for your debug Rimworld savedata (leave blank for default)",
+            "selector": "string",
             "url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
+        },
+        "create_empty_definitions": {
+            "label": "Create blank XML definition files",
+            "description": "Create empty files as templates for your definitions (delete all the rest!)",
+			"selector": "yesno",
+			"url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
         }
     }
 }

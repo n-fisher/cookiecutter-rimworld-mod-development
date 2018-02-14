@@ -44,6 +44,10 @@
       <HintPath>..\..\..\RimWorldWin_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
+	<None Include="..\About\**" />
+	<None Include="..\Defs\**" />
+	<None Include="..\Languages\**" />
+	<None Include="..\Patches\**" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="{{cookiecutter.mod_name.replace(' ', '_')}}.cs" />
