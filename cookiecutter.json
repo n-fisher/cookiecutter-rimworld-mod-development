@@ -3,6 +3,7 @@
     "author": "MySteamUsername",
     "in_game_description": "A short mod description.",
     "debug_savedata_folder": "Path for savedatafolder. Leave blank for default folder.",
+	"create_empty_definitions": "yes",
 	
 	"_visual_studio": {
         "mod_name": {
