@@ -2,5 +2,31 @@
     "mod_name": "Example Mod",
     "author": "MySteamUsername",
     "in_game_description": "A short mod description.",
-    "optional___leave_blank_debugsavedatafolder": "Path for savedatafolder. Leave blank for default folder."
+    "debug_savedata_folder": "Path for savedatafolder. Leave blank for default folder.",
+	
+	"_visual_studio": {
+        "mod_name": {
+            "label": "Mod name (see tooltip)",
+            "description": "The name of your mod (cannot easily change later) (must Create To folder of same name in \\Rimworld\\Mods)",
+			"selector": "string",
+			"url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
+        },
+        "author": {
+            "label": "Author",
+            "description": "Use your Steam username for automatic linking of mod to profile (can change later in About-Release.xml)",
+			"selector": "string",
+            "url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
+        },
+        "in_game_description" : {
+            "label": "Mod Description",
+            "description": "The description of the mod as it appears in-game (can change later in About-Release.xml)",
+            "selector": "string",
+            "url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
+        },
+        "debug_savedata_folder" : {
+            "label": "Debug Savedata Folder",
+            "description": "Path to the folder to use for your debug Rimworld savedata (leave blank for default)",
+            "url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
+        }
+    }
 }
