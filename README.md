@@ -39,18 +39,17 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
 3. Search for `rimworld`
 4. Double-click `n-fisher/cookiecutter-rimworld-mod-development`
 5. Change the Template Options:
-   - `Create To` => `[...]/Rimworld/Mods/ModName`
-   - `mod_name`
-   - `author` => `your steam username`
+   - `Create To` => `[...]/Rimworld/Mods/mod_name`
+   - `The name of your mod (cannot easily change namespace later)`
+   - `author` (Use your Steam username for automatic linking of mod to profile) (can change later in About-Release.xml)
    - `in_game_description` (not required, can change later in About-Release.xml)
-   - `skippable_debugsavedatafolder` (don't change if unsure)
-   - `skippable_targetversion` => `current RW version` (can leave blank for most up-to-date)
+   - `debug_savedata_folder` (Path to the folder to use for your debug Rimworld savedata) (leave blank for default)
 6. `Create and Open Folder`
 
 
 # Basic Features
 ### Folder Structure
-This cookiecutter builds the entire standard mod folder structure, with empty folders as the default.
+This cookiecutter builds the entire standard mod folder structure, with empty folders as the default. `namespace_name` is automatically calculated.
 - {{cookiecutter.mod_name}}
   - About
     - About-Debug.xml
@@ -83,7 +82,7 @@ This cookiecutter setup takes full advantage of VS debug/release versions
 - Debug mode
   - About-Debug.xml contains instructions on editing About-Release.xml and has a separate title for easy recognition from the Release version 
   - Building creates an About.xml from About-Debug.xml with a "- Dev Build" tag to be easily distinguishable in the mod list
-  - The resulting .dll is placed in "{{cookiecutter.mod_name}}/"
+  - The resulting .dll is placed in "{{cookiecutter.mod_name}}/Assemblies"
 - Release mode
   - About-Release.xml is copied to "{{cookiecutter.mod_name}} - Release/About/About.xml" and does not include the "- Dev Mode" tag in its title
   - Building utilizes scripts to create or update the Release version of the mod. Solely the essential files are copied into a separate Release mod folder for a storage-optimized version of the mod
