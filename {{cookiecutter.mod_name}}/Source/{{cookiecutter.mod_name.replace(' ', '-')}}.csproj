@@ -7,8 +7,8 @@
     <ProjectGuid>{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>{{cookiecutter.skippable_namespace_name}}</RootNamespace>
-    <AssemblyName>{{cookiecutter.skippable_namespace_name}}</AssemblyName>
+    <RootNamespace>{{cookiecutter.mod_name.replace(' ', '-')}}</RootNamespace>
+    <AssemblyName>{{cookiecutter.mod_name.replace(' ', '-')}}</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -24,7 +24,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\{{cookiecutter.skippable_namespace_name}} - Release\Assemblies\</OutputPath>
+    <OutputPath>..\..\{{cookiecutter.mod_name.replace(' ', '-')}} - Release\Assemblies\</OutputPath>
     <DefineConstants></DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -46,7 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="{{cookiecutter.skippable_namespace_name}}.cs" />
+    <Compile Include="{{cookiecutter.mod_name.replace(' ', '-')}}.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
