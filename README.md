@@ -35,6 +35,15 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
 ##### Required Programs
 
 - [Visual Studio Community 2017](https://www.visualstudio.com/downloads/)
+
+##### Install (if no `File -> New -> From Cookiecutter...` option is available)
+1. Open up VS Installer (In Visual Studio -> Tools -> Gets Tools and Features)
+2. Click Modify
+3. Click Individual Components
+4. Scroll to Development activities
+5. Click the Cookiecutter template support checkbox
+6. Click Modify
+
 ##### Usage
 (Due to a bug in VS, you'll have to make the specific mod's folder in `[...]/Rimworld/Mods/ModName` beforehand)
 1. Open Visual Studio
