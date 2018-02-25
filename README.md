@@ -40,11 +40,13 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
 4. Double-click `n-fisher/cookiecutter-rimworld-mod-development`
 5. Change the Template Options:
    - `Create To` => `[...]/Rimworld/Mods/mod_name`
-   - `The name of your mod (cannot easily change namespace later)`
-   - `author` (Use your Steam username for automatic linking of mod to profile) (can change later in About-Release.xml)
-   - `in_game_description` (not required, can change later in About-Release.xml)
-   - `debug_savedata_folder` (Path to the folder to use for your debug Rimworld savedata) (leave blank for default)
+   - `Mod name`
+   - `Author` (Use your Steam username for automatic linking of mod to profile) (can change later in About-Release.xml)
+   - `Mod Description` (not required, can change later in About-Release.xml)
+   - `Create blank XML files` (yes/no)
 6. `Create and Open Folder`
+7. In the Solution Explorer pane that comes up on the left, double click your `ModName.sln` file
+8. In the new Solution Explorer view that comes up, right click `RimWorldWin` and click `Set as Startup Project`
 
 
 # Basic Features
@@ -88,7 +90,7 @@ This cookiecutter setup takes full advantage of VS debug/release versions
   - Building utilizes scripts to create or update the Release version of the mod. Solely the essential files are copied into a separate Release mod folder for a storage-optimized version of the mod
   
 ### Optional Debug Save Profile
-Feeding a filepath (either absolute "C:\" or relative to the root game folder) to `skippable_debugsavedatafolder` will create a new/load an existing Rimworld save data folder, including having different world saves, mod lists, and settings profiles, specifically when ran in debug mode. Perfect for maintaining a debug mod test/development environment and then testing the release version on mature saves with other mods!
+<Temporarily removed>
   
 ### Accident Forgiveness
 - Edits in either generated temporary About.xml file (release or debug) won't get overwritten as long as the About-$Version.xml file it was copied from is not updated
