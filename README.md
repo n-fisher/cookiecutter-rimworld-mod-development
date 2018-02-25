@@ -50,6 +50,7 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
 6. `Create and Open Folder`
 7. In the Solution Explorer pane that comes up on the right, double click your `ModName.sln` file
 8. In the new Solution Explorer view that comes up, right click `RimWorldWin` and click `Set as Startup Project`
+9. Due to a bug in VS, you'll have to delete the folder `[...]/Rimworld/Mods/ModName - Release` after you create the project. Otherwise, you will receive an error message whenever you start the game before the first time that you build VS in Release mode.
 
 
 # Basic Features
