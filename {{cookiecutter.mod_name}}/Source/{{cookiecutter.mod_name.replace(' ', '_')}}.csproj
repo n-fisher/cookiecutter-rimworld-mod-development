@@ -61,7 +61,6 @@
   <PropertyGroup>
     <StartAction>Program</StartAction>
     <StartProgram>$(SolutionDir)..\..\RimWorldWin.exe</StartProgram>
-    <StartArguments>-popupwindow</StartArguments>
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>echo F|xcopy "$(ProjectDir)..\About\About-$(ConfigurationName).xml" "$(TargetDir)..\About\About.xml" /C /Y /K /Q /D
