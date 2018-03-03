@@ -26,7 +26,7 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
 - [cookiecutter](https://github.com/audreyr/cookiecutter) (or `pip install cookiecutter`)
 
 ##### Usage (inside Rimworld/Mods folder)
-1. `cookiecutter gh:n-fisher/cookiecutter-rimworld-mod-development`
+1. `cookiecutter gh:L0laapk3/cookiecutter-rimworld-mod-development`
 2. `[Answer the prompts]`
 3. Open the folder you just created and double-click the `ModName.sln` file
 4. In the Solution Explorer view on the right, right click `RimWorldWin` and click `Set as Startup Project`
@@ -49,7 +49,7 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
 1. Open Visual Studio
 2. `File -> New -> From Cookiecutter...`
 3. Search for `rimworld`
-4. Double-click `n-fisher/cookiecutter-rimworld-mod-development`
+4. Double-click `L0laapk3/cookiecutter-rimworld-mod-development`
 5. Change the Template Options:
    - `Create To` => `[...]/Rimworld/Mods/mod_name`
    - `Mod name`
