@@ -5,7 +5,6 @@
     "mod_ver": "1.0.0",
 	"create_empty_definitions": "n",
     "rw64": "n",
-    "githubURL": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md",
 	
 	"_visual_studio": {
         "mod_name": {
