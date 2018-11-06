@@ -2,6 +2,7 @@
     "mod_name": "Example Mod",
     "author": "MySteamUsername",
     "in_game_description": "A short mod description.",
+    "mod_ver": "1.0.0",
 	"create_empty_definitions": "n",
 	
 	"_visual_studio": {
@@ -20,6 +21,12 @@
         "in_game_description" : {
             "label": "Mod Description",
             "description": "The description of the mod as it appears in-game (can change later in About-Release.xml)",
+            "selector": "string",
+            "url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
+        },
+        "mod_ver" : {
+            "label": "Mod Version",
+            "description": "The version of Rimworld this mod is for (default:1.0.0)",
             "selector": "string",
             "url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
         },
