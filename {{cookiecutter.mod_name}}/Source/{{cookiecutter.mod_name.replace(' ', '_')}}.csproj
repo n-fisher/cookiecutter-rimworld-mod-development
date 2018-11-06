@@ -60,7 +60,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <StartAction>Program</StartAction>
-    <StartProgram>"$(SolutionDir)..\..\RimWorldWin{%if(cookiecutter.rw64 != 'n')}64{%endif%}.exe -quicktest"</StartProgram>
+    <StartProgram>"$(SolutionDir)..\..\RimWorldWin{%if(cookiecutter.rw64 != 'n')%}64{%endif%}.exe -quicktest"</StartProgram>
   </PropertyGroup>
   <PropertyGroup>
     <PostBuildEvent>echo F|xcopy "$(ProjectDir)..\About\About-$(ConfigurationName).xml" "$(TargetDir)..\About\About.xml" /C /Y /K /Q /D
