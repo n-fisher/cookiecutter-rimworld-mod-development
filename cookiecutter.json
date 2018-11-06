@@ -4,6 +4,7 @@
     "in_game_description": "A short mod description.",
     "mod_ver": "1.0.0",
 	"create_empty_definitions": "n",
+    "rw64": "n",
 	
 	"_visual_studio": {
         "mod_name": {
@@ -34,7 +35,13 @@
             "label": "Create blank XML definition files",
             "description": "Create empty files as templates for your definitions (delete all the rest!)",
 			"selector": "yesno",
-			"url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
+			"url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"       
+        },
+        "rw64":{
+            "label": "RimWorldWin64.exe ?",
+            "description": "Are you using RimWorldWin64.exe or not to launch",
+            "selector": "yesno",
+            "url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
         }
     }
 }
