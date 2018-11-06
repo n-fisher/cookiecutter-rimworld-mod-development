@@ -40,6 +40,7 @@
         },
         "githubURL": {
             "label": "Github",
+            "selector": "none",
             "url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
         }
     }
