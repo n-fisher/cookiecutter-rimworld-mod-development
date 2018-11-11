@@ -1,31 +1,33 @@
 {
     "mod_name": "Example Mod",
+    "mod_folder": "{{cookiecutter.mod_name|replace(' ','_')}}",
     "author": "MySteamUsername",
     "in_game_description": "A short mod description.",
-    "mod_ver": "1.0.0",
+    "mod_ver": ["1.0.0","0.19.0","0.18.0"],
 	"create_empty_definitions": "n",
     "rw64": "n",
+    "githubURL": " ",
 	
 	"_visual_studio": {
         "mod_name": {
             "label": "Mod name (see tooltip)",
-            "description": "The name of your mod (cannot easily change later) (must Create To folder of same name in \\Rimworld\\Mods\\)",
-			"selector": "string"
+            "description": "The name of your mod (cannot easily change later) (must Create To folder of same name in \\Rimworld\\Mods\\)"
+        },
+        "mod_folder": {
+            "label": "Mod folder",
+            "description": "The root folder for your mod. Defaults to({{cookiecutter.mod_name|replace(' ','_')}})"
         },
         "author": {
             "label": "Author",
-            "description": "Use your Steam username for automatic linking of mod to profile (can change later in About-Release.xml)",
-			"selector": "string"
+            "description": "Use your Steam username for automatic linking of mod to profile (can change later in About-Release.xml)"
         },
         "in_game_description" : {
             "label": "Mod Description",
-            "description": "The description of the mod as it appears in-game (can change later in About-Release.xml)",
-            "selector": "string"
+            "description": "The description of the mod as it appears in-game (can change later in About-Release.xml)"
         },
         "mod_ver" : {
             "label": "Mod Version",
-            "description": "The version of Rimworld this mod is for (default:1.0.0)",
-            "selector": "string"
+            "description": "The version of Rimworld this mod is for (default:1.0.0)"
         },
         "create_empty_definitions": {
             "label": "Create blank XML definition files",
@@ -34,12 +36,11 @@
         },
         "rw64": {
             "label": "RimWorldWin64.exe ?",
-            "description": "Are you using RimWorldWin64.exe or not to launch",
+            "description": "Are you using RimWorldWin64.exe or not to develop?",
             "selector": "yesno"
         },
         "githubURL": {
             "label": "Github",
-            "selector": "none",
             "url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
         }
     }
