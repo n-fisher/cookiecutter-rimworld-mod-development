@@ -1,6 +1,6 @@
 {
     "mod_name": "Example Mod",
-    "mod_folder": "{{cookiecutter.mod_name|replace(' ','_')}}",
+    "mod_folder": " ",
     "author": "MySteamUsername",
     "in_game_description": "A short mod description.",
     "mod_ver": ["1.0.0","0.19.0","0.18.0"],
@@ -10,12 +10,12 @@
 	
 	"_visual_studio": {
         "mod_name": {
-            "label": "Mod name (see tooltip)",
-            "description": "The name of your mod (cannot easily change later) (must Create To folder of same name in \\Rimworld\\Mods\\)"
+            "label": "Mod name",
+            "description": "The name of your mod (cannot easily change later)"
         },
         "mod_folder": {
             "label": "Mod folder",
-            "description": "The root folder for your mod. Defaults to({{cookiecutter.mod_name|replace(' ','_')}})"
+            "description": "The root folder for your mod."
         },
         "author": {
             "label": "Author",
