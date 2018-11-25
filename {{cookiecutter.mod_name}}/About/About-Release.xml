@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>{{cookiecutter.mod_name}}</name>
 	<author>{{cookiecutter.author}}</author>
-	<targetVersion>0.18.0</targetVersion>
+	<targetVersion>{{cookiecutter.mod_ver}}</targetVersion>
 	<description>{{cookiecutter.in_game_description}}</description>
 	<url>https://steamcommunity.com/id/{{cookiecutter.author}}/myworkshopfiles/?appid=294100</url>
 </ModMetaData>
