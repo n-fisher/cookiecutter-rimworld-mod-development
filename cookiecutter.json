@@ -2,32 +2,25 @@
     "mod_name": "Example Mod",
     "author": "MySteamUsername",
     "in_game_description": "A short mod description.",
-	"create_empty_definitions": "n",
+    "create_empty_definitions": "n",
 	
-	"_visual_studio": {
+	  "_visual_studio": {
         "mod_name": {
-            "label": "Mod name (see tooltip)",
-            "description": "The name of your mod (cannot easily change later) (must Create To folder of same name in \\Rimworld\\Mods\\)",
-			"selector": "string",
-			"url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
+            "label": "Mod name",
+            "description": "The name of your mod (cannot easily change later)"
         },
         "author": {
             "label": "Author",
-            "description": "Use your Steam username for automatic linking of mod to profile (can change later in About-Release.xml)",
-			"selector": "string",
-            "url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
+            "description": "Use your Steam username for automatic linking of mod to profile (can change later in About.xml)"
         },
         "in_game_description" : {
             "label": "Mod Description",
-            "description": "The description of the mod as it appears in-game (can change later in About-Release.xml)",
-            "selector": "string",
-            "url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
+            "description": "The description of the mod as it appears in-game (can change later in About.xml)"
         },
         "create_empty_definitions": {
             "label": "Create blank XML definition files",
             "description": "Create empty files as templates for your definitions (delete all the rest!)",
-			"selector": "yesno",
-			"url": "https://github.com/n-fisher/cookiecutter-rimworld-mod-development/blob/master/README.md"
+			      "selector": "yesno"
         }
     }
 }
