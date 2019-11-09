@@ -23,7 +23,7 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
 
 ##### Usage (inside Rimworld/Mods folder)
 1. `cookiecutter gh:n-fisher/cookiecutter-rimworld-mod-development`
-2. Follow the prompts
+2. Follow the prompts, and just press enter to skip the last prompt (`_visual_studio`)
 3. Open the folder you just created and double-click the `ModName.sln` file
 4. In the Solution Explorer pane right click `RimWorldWin` and click `Set as Startup Project`
     
@@ -53,7 +53,8 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
    - `Mod Description` (not required, can change later in About.xml)
    - `Create blank XML files` (yes/no)
 6. `Create and Open Folder`
-7. In the Solution Explorer pane, double click your `ModName.sln` file
+7. In the Solution Explorer pane double click your `ModName.sln` file
+8. In the Solution Explorer pane right click `RimWorldWin64` and then click `Set as StartUp Project`
 
 
 # Basic Features
