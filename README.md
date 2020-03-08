@@ -64,19 +64,21 @@ This cookiecutter builds the entire standard mod folder structure, with empty fo
   - About
     - About.xml
     - Preview.png
-  - Assemblies
-  - Defs
-  - Languages
-  - Patches
-  - Sounds
+  - Common
+    - Assemblies
+    - Defs
+    - Languages
+    - Patches
+    - Sounds
+    - Textures
   - Source
     - Properties
       - AssemblyInfo.cs
     - `namespace_name`.cs
     - `namespace_name`.csproj
     - `namespace_name`.csproj.user
-  - Textures
   - `namespace_name`.sln
+  - LoadFolders.xml
 
 ### VS Setup Automation
 - Links Rimworld and UnityEngine .dlls for importing in code

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>{{cookiecutter.mod_name}}</name>
 	<author>{{cookiecutter.author}}</author>
+    <packageId>{{cookiecutter.author.replace(' ','')}}.{{cookiecutter.mod_name.replace(' ','')}}</packageId>
 	<supportedVersions>
-		<li>1.0</li>
+		<li>1.1</li>
 	</supportedVersions>
 	<description>{{cookiecutter.in_game_description}}</description>
 	<url>https://steamcommunity.com/id/{{cookiecutter.author}}/myworkshopfiles/?appid=294100</url>
