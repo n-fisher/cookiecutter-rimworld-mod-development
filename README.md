@@ -54,7 +54,6 @@ A cookiecutter project that builds the basic Rimworld mod development file struc
    - `Create blank XML files` (yes/no)
 6. `Create and Open Folder`
 7. In the Solution Explorer pane double click your `ModName.sln` file
-8. In the Solution Explorer pane right click `RimWorldWin64` and then click `Set as StartUp Project`
 
 
 # Basic Features
@@ -84,4 +83,3 @@ This cookiecutter builds the entire standard mod folder structure, with empty fo
 - Links Rimworld and UnityEngine .dlls for importing in code
 - Clears the default set debugging and trace constants
 - Creates a VS solution with correctly defined paths
-- Clicking `Start ▶️` will preform the designated build sequence and start Rimworld.exe tied to a Visual Studio resource monitor.
